@@ -60,7 +60,7 @@ namespace CulDeSacApi.Controllers
         private static string FormatTraceMessage(string message)
         {
             StringBuilder traceMessage = new StringBuilder();
-            traceMessage.Append(message);
+            traceMessage.AppendLine(message);
             traceMessage.AppendLine($"ParentSpanId: {Activity.Current.ParentSpanId}");
             traceMessage.AppendLine($"ParentId: {Activity.Current.ParentId}");
             traceMessage.AppendLine($"SpanId: {Activity.Current.SpanId}");
