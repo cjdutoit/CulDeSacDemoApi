@@ -66,8 +66,8 @@ namespace CulDeSacApi.Services.Foundations.Students
         private static string FormatTraceMessage(string message)
         {
             StringBuilder traceMessage = new StringBuilder();
-            traceMessage.Append(message);
-            traceMessage.AppendLine($"ParentSpanId: {Activity.Current.ParentSpanId}");
+            traceMessage.AppendLine(message);
+            traceMessage.AppendLine($"Display Name: {Activity.Current.DisplayName}");
             traceMessage.AppendLine($"ParentId: {Activity.Current.ParentId}");
             traceMessage.AppendLine($"SpanId: {Activity.Current.SpanId}");
             traceMessage.AppendLine($"Id: {Activity.Current.Id}");
