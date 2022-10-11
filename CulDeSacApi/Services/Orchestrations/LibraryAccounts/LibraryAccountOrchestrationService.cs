@@ -58,11 +58,11 @@ namespace CulDeSacApi.Services.Orchestrations.LibraryAccounts
 
                         LibraryCard addedLibraryCard = await CreateLibraryCardAsync(libraryAccount);
 
-                        //this.loggingBroker
-                        //    .LogTrace(FormatTraceMessage($"Library Account added: {libraryAccount.Id}"));
+                        this.loggingBroker
+                            .LogTrace(FormatTraceMessage($"Library Account added: {libraryAccount.Id}"));
 
-                        //this.loggingBroker
-                        //    .LogTrace(FormatTraceMessage($"Library Card added: {addedLibraryCard.Id}"));
+                        this.loggingBroker
+                            .LogTrace(FormatTraceMessage($"Library Card added: {addedLibraryCard.Id}"));
 
                         return addedLibraryAccount;
                     },

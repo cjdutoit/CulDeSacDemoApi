@@ -61,7 +61,7 @@ namespace CulDeSacApi.Services.Orchestrations.StudentEvents
         {
             StringBuilder traceMessage = new StringBuilder();
             traceMessage.AppendLine(message);
-            traceMessage.AppendLine($"Display Name: {Activity.Current.DisplayName}");
+            traceMessage.AppendLine($"Where: {Activity.Current.DisplayName}");
             traceMessage.AppendLine($"ParentId: {Activity.Current.ParentId}");
             traceMessage.AppendLine($"SpanId: {Activity.Current.SpanId}");
             traceMessage.AppendLine($"Id: {Activity.Current.Id}");

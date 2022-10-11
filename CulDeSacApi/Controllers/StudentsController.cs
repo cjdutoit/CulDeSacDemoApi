@@ -35,7 +35,7 @@ namespace CulDeSacApi.Controllers
                             await this.studentEventOrchestrationService.AddStudentAsync(student);
 
                         this.loggingBroker
-                            .LogTrace(FormatTraceMessage($"Student added: {addedStudent.Id} - {student.Name}"));
+                            .LogTrace(FormatTraceMessage($"Student Id: {addedStudent.Id}\nStudent Name: {student.Name}"));
 
                         return Created(addedStudent);
                     },
